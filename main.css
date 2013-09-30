@@ -1,5 +1,8 @@
 body {background-image:url('body-bg.png');}
-h1.h1 {color:white;}
+h1.h1 {color:yellow;}
 p.p1 {color:gray;}
 table.maintable {border: 1px solid white;}
+td.maintable {border: 1px solid red;}
+ul.ul1 {list-style-type:square}
+
 
