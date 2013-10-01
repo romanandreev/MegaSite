@@ -1,14 +1,49 @@
-body {background-image:url('body-bg.png');}
-h1.h1 {color:yellow;}
-p.p1 {color:gray;}
-p{text-indent: 20px;}
-table.maintable {border: 1px solid white;}
-td.maintable {background: linear-gradient(190deg, black, white 60%);}
-tr.top{background-color:black;}
-ul.ul1 {list-style-type:square}
-a{color:blue}
-td.grad{
-     background: linear-gradient(to bottom, black, white 20%);
+body {
+    background-image:url('body-bg.png');
+}
+h1.h1 {
+    color:yellow;
+}
+h1.cent {
+    text-align: center;
+}
+h2.cent {
+    text-align: center;
+}
+p.p1 {
+    color:gray;
+}
+p {
+    text-indent: 20px;
+}
+table.maintable {
+    border: 1px solid white;
+}
+td.maintable {
+    vertical-align:top;
+    background: linear-gradient(190deg, black, white 60%);
+}
+tr.top {
+    background-color:black;
+}
+ul.ul1 {    
+    color: red;
+    list-style-type:square;    
+}
+li.ul1 {
+    color: black;
+}
+a:visited {
+    color:gray;
+}
+a:link {
+    color:#08e8de;
+}
+div.img {
+    text-align: center;
+}
+td.grad {
+     background: linear-gradient(to bottom, black, white 80%);
 }
 
 
