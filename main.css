@@ -1,8 +1,14 @@
 body {background-image:url('body-bg.png');}
 h1.h1 {color:yellow;}
 p.p1 {color:gray;}
+p{text-indent: 20px;}
 table.maintable {border: 1px solid white;}
-td.maintable {border: 1px solid red;}
+td.maintable {background: linear-gradient(190deg, black, white 60%);}
+tr.top{background-color:black;}
 ul.ul1 {list-style-type:square}
+a{color:blue}
+td.grad{
+     background: linear-gradient(to bottom, black, white 20%);
+}
 
 
