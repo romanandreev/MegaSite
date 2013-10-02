@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+body {
+    background:black url("background.png");
+}
+
+* { padding: 0; margin: 0; }
+div.megadiv{
+    position: fixed;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: "Droid Sans", arial, verdana, sans-serif;
+    font-weight: 700;
+    color: #ff6;
+    background-color: #000;
+    overflow: hidden;
+}
+img.img {
+    width:100%;
+}
+p#start {
+    position: relative;
+    width: 16em;
+    font-size: 200%;
+    font-weight: 400;
+    margin: 20% auto;
+    color: #4ee;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: intro 5s ease-out;
+}
+
+@-webkit-keyframes intro {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+h1 {
+    position: fixed;
+    top: -10%;
+    width:100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: logo 10s ease-out 6s;  
+}
+
+@-webkit-keyframes logo {
+    0% { -webkit-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+#titles {    
+    position: absolute;
+    width:14.5em;
+    left: 50%;
+    margin-left: -7.25em;
+    height: 50em;
+    bottom: 0;
+    font-size: 350%;
+    text-align: justify;
+    overflow: hidden;
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: perspective(300px) rotateX(25deg);
+}
+
+#titles:after {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 60%;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+#titles p {    
+    margin: 0.8em 0;
+}
+
+#titles p.center1 {
+    font-size: 200%;
+    text-align: center;
+}
+
+#titles p.center2 {
+    font-size: 150%;
+    text-align: center;
+}
+
+#titlecontent {
+    position: absolute;
+    top: 100%;
+    -webkit-animation: scroll 150s linear 12s infinite;
+}
+
+@-webkit-keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
